@@ -10,17 +10,18 @@
 <body class="body">
     <h1 class="title">Progress steps</h1>
     <div class="steps">
-        <div class="steps__line active"></div>
-        <div class="steps__round-container">
-            <div class="round">1</div>
-            <div class="round active">2</div>
-            <div class="round">3</div>
-            <div class="round">4</div>
+        <div class="steps__circles-container">
+            <div class="steps__line"></div>
+            <div class="steps__circles">
+                <div class="steps__circle active">1</div>
+                <div class="steps__circle">2</div>
+                <div class="steps__circle">3</div>
+                <div class="steps__circle">4</div>
+            </div>
         </div>
+        <button class="steps__button" id="prev" disabled>prev</button>
+        <button class="steps__button" id="next">next</button>
     </div>
-    <div class="button-container">
-        <button class="button active">Prev</button>
-        <button class="button">Next</button>
-    </div>
+    <script src="./progress_steps.js"></script>
 </body>
 </html>
