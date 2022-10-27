@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+.body {
+    background: rgb(2,0,36);
+    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 40%, rgba(9,9,121,1) 100%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Lora', serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 50vh;
+}
+
+.header {
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: .1em;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.search {
+    position: relative;
+}
+
+.btn {
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background: none;
+    background-image: url('../images/icons/search.svg');
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.input {
+    background: none;
+    border: none;
+    border-bottom: 5px solid #fff;
+    width: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity .4s ease width .4s ease;
+    padding: 5px;
+}
+
+.btn:focus, .input:focus {
+    outline: none;
+}
+
+.search.active .input {
+    width: 90%;
+    max-width: 200px;
+    opacity: 1;
+    transition: .4s ease;
+}
+
+.search.active .btn {
+    transform: translateX(192px) rotate(90deg);
+    transition: .4s ease;
+}
+
