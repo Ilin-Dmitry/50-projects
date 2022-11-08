@@ -1,0 +1,27 @@
+.body {
+    background-color: #000;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/path.jpg') center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(0px);
+    position: relative;
+}
+
+.text {
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
